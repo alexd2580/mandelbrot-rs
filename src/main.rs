@@ -5,6 +5,7 @@ extern crate num_complex;
 use num_complex::{Complex, Complex64};
 
 fn compute_pixel(x: i32, y: i32, w: i32, h: i32, iterations: u32) -> Complex64 {
+    
     Complex::new(0.0, 0.0)
 }
 
