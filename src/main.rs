@@ -29,9 +29,11 @@ fn main() {
     let iterations = 5;
     let d = generate_fractal(W, H, iterations);
     let image = init_image();
-    //let mut img = ImageBuffer::new(w, h);
-    
-    //img.save("img.png");
+    let mut img = ImageBuffer::from_fn(w, h, |x, y| {
+        image::Luma(d[y * W + x])
+    });
+
+    img.save("img.png");
 }
 
 fn generate_fractal(W: u32, H: u32, iterations: u32) -> Box<[u8]> {
