@@ -1,6 +1,0 @@
-[package]
-name = "mandelbrot"
-version = "0.1.0"
-authors = ["Alexander Dmitriev <alexander.dmitriev2580@gmail.com>"]
-
-[dependencies]
