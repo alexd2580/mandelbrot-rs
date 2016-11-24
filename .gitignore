@@ -1,3 +1,5 @@
 target
 Cargo.lock
 target
+/mandelbrot-rs.iml
+/.idea/
